@@ -1,6 +1,6 @@
 import random
 
-from zhihu.misc.proxy import PROXIES
+# from zhihu.misc.proxy import PROXIES
 from zhihu.misc.agents import AGENTS
 import logging
 
@@ -8,9 +8,10 @@ class CustomHttpProxyMiddleware(object):
 
     def process_request(self, request, spider):
         if self.use_proxy(request):
-            proxy =  random.choice(PROXIES)
-            logging.info('Using proxy ' + proxy['ip_port'])
-            request.meta['proxy'] = 'http://' + proxy['ip_port']
+            pass
+            # proxy =  random.choice(PROXIES)
+            # logging.info('Using proxy ' + proxy['ip_port'])
+            # request.meta['proxy'] = 'http://' + proxy['ip_port']
 
     def use_proxy(self, request):
         if 'proxy' in request.meta:

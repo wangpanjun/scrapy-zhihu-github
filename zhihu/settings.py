@@ -1,13 +1,15 @@
 # -*- coding:utf-8 -*-
 
+DOWNLOAD_HANDLERS = {'s3': None, }
+
 BOT_NAME = 'zhihu'
 
 SPIDER_MODULES = ['zhihu.spiders']
 NEWSPIDER_MODULE = 'zhihu.spiders'
 
-LOG_FILE = 'zhihu.log'
-LOG_LEVEL= 'INFO'
-
+# LOG_FILE = 'zhihu.log'
+# LOG_LEVEL= 'INFO'
+DEPTH_LIMIT =2
 COOKIES_DEBUG = False
 RETRY_ENABLED = False
 REDIRECT_ENABLED = False

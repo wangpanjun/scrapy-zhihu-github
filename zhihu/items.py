@@ -137,3 +137,11 @@ class DoubanSubjectItem(Item):
     content_intro = Field()
     author_intro = Field()
     tags = Field()
+
+
+class DouBookItem(Item):
+    url = Field()
+    name = Field()
+    desc = Field()
+    rating = Field()
+    # img = Field()
